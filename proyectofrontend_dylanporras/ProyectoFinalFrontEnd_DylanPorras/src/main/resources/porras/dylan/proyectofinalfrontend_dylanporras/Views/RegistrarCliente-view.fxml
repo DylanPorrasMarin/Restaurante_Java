@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Css/FormatoGeneral.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="porras.dylan.proyectofinalfrontend_dylanporras.controllers.RegistrarClienteController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="81.0" layoutX="475.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/mesa-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="67.0" layoutY="56.0" text="Nombre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="148.0" text="Cantidad Acompañantes">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCantidadAcom" alignment="CENTER" layoutX="265.0" layoutY="145.0" prefHeight="25.0" prefWidth="164.0" promptText="Cantidad Acompañantes" />
+      <TextField fx:id="txtNombreC" alignment="CENTER" layoutX="265.0" layoutY="53.0" prefHeight="25.0" prefWidth="164.0" promptText="Nombre Cliente" />
+      <Button fx:id="btnAsignarMesa" layoutX="448.0" layoutY="245.0" mnemonicParsing="false" onAction="#MostrarMesas" prefHeight="25.0" prefWidth="124.0" style="-fx-background-color: transparent;" text="Ver Mesas">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="104.0" layoutY="254.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRegistrarCliente" layoutX="321.0" layoutY="322.0" mnemonicParsing="false" onAction="#RegistrarCliente" prefHeight="33.0" prefWidth="81.0" text="Registrar" />
+      <Label layoutX="67.0" layoutY="244.0" text="Mesa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumeroMesa" alignment="CENTER" layoutX="265.0" layoutY="238.0" prefHeight="25.0" prefWidth="164.0" promptText="Numero Mesa" />
+      <Button fx:id="btnAtras" layoutX="225.0" layoutY="322.0" mnemonicParsing="false" onAction="#volverAMenu" prefHeight="33.0" prefWidth="81.0" text="Atras" />
+   </children>
+</Pane>

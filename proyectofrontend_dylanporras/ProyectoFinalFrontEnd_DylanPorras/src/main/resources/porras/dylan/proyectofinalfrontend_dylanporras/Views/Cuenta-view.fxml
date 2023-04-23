@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="361.0" stylesheets="@../Css/FormatoGeneral.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="porras.dylan.proyectofinalfrontend_dylanporras.controllers.CuentaController">
+   <children>
+      <TextField fx:id="txtNombre" layoutX="179.0" layoutY="58.0" promptText="Nombre" />
+      <Label layoutX="46.0" layoutY="61.0" text="Nombre Cliente">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="193.0" layoutY="126.0" mnemonicParsing="false" onAction="#generarCuenta" text="Generar Cuenta" />
+      <Button layoutX="62.0" layoutY="126.0" mnemonicParsing="false" onAction="#volverAMenu" text="Volver a menu" />
+   </children>
+</Pane>

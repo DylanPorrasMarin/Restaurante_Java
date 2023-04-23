@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="696.0" stylesheets="@../Css/FormatoGeneral.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="porras.dylan.proyectofinalfrontend_dylanporras.controllers.ListarClienteOrdenController">
+    <TableView fx:id="tablaClientes" prefHeight="259.0" prefWidth="696.0" stylesheets="@../Css/FormatoGeneral.css" tableMenuButtonVisible="true">
+        <columns>
+            <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="colNombre" prefWidth="193.0" sortable="false" text="Nombre" />
+            <TableColumn fx:id="colCantidadAcomp" prefWidth="256.0" sortable="false" text="Cantidad Acompañantes" />
+            <TableColumn fx:id="colNumeroMesa" prefWidth="195.0" sortable="false" text="Mesa Ocupada" />
+        </columns>
+        <cursor>
+            <Cursor fx:constant="TEXT" />
+        </cursor>
+    </TableView>
+    <Button fx:id="btnAceptar" layoutX="323.0" layoutY="263.0" mnemonicParsing="false" onAction="#onBtnAceptar" text="Aceptar">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+</Pane>

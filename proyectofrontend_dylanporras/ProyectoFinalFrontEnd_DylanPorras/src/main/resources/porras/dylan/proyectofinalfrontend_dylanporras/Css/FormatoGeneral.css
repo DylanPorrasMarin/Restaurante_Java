@@ -1,0 +1,57 @@
+.root{
+
+}
+
+.button {
+    -fx-background-radius: 5;
+    -fx-background-color: #f5fffa;
+}
+
+.button:pressed{
+    -fx-background-color: #b0c4de;
+}
+
+.text-field {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;/*Se quitan los bordes del txt y se deja solo el de abajo*/
+    -fx-background-color: transparent;
+}
+
+#bebidaRadioButton:selected .dot{  /* .dot, selecciona el bullet del radio button y le cambia el color a rojo*/
+    -fx-background-color: #b22222;
+}
+
+#platilloRadioButton:selected .dot{  /* .dot, selecciona el bullet del radio button y le cambia el color a rojo*/
+    -fx-background-color:  #7cfc00;
+}
+
+#paneMesero{
+    -fx-background-image: url("/porras/dylan/proyectofinalfrontend_dylanporras/Imagenes/meseroLogin.jpg");
+}
+#paneMenu{
+    -fx-background-image: url("/porras/dylan/proyectofinalfrontend_dylanporras/Imagenes/fondoMenu.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+
+#lblCandelabro,#lblCliente,#lblCuenta,#lblMesa,#lblOrden,#lblProducto{
+    -fx-text-fill: black;
+}
+
+#lblBienvenida{
+    -fx-text-fill: red;
+}
+
+#btnProducto{
+
+}
+
+#lblCandelabro:hover,#lblCliente:hover,#lblCuenta:hover,#lblBienvenida:hover,#lblMesa:hover,#lblOrden:hover,#lblProducto:hover{
+    -fx-text-fill: red;
+}
+
+
+
+
+
