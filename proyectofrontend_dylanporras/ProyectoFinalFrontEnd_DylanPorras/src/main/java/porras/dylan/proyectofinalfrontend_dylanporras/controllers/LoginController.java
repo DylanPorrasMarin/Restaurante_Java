@@ -36,7 +36,7 @@ public class LoginController {
 
      } catch (Exception ex) {
          Alert alert = new Alert(Alert.AlertType.ERROR, ex.getMessage());
-         alert.setHeaderText("");
+         alert.setHeaderText(" ");
          alert.showAndWait();
 
      }
